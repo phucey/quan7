@@ -1,0 +1,1265 @@
+﻿<!DOCTYPE html><html lang="en" style="height: auto;"><head>
+<link rel="icon" data-savepage-href="https://data.thienkhoi.com/favicon.ico" href=""><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quản lý Kho</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/Content/plugins/fontawesome-free/css/all.min.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="/Content/plugins/daterangepicker/daterangepicker.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="/Content/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="/Content/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="/Content/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="/Content/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="/Content/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="/Content/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <!-- BS Stepper -->
+    <link rel="stylesheet" href="/Content/plugins/bs-stepper/css/bs-stepper.min.css">
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="/Content/plugins/dropzone/min/dropzone.min.css">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="/Content/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="/Content/plugins/toastr/toastr.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Content/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="/Content/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="/Content/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+    <!-- Ion Slider -->
+    <link rel="stylesheet" href="/Content/plugins/ion-rangeslider/css/ion.rangeSlider.min.css">
+    <!-- bootstrap slider -->
+    <link rel="stylesheet" href="/Content/plugins/bootstrap-slider/css/bootstrap-slider.min.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="/Content/plugins/daterangepicker/daterangepicker.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="/Content/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="/Content/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="/Content/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="/Content/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="/Content/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="/Content/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <!-- BS Stepper -->
+    <link rel="stylesheet" href="/Content/plugins/bs-stepper/css/bs-stepper.min.css">
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="/Content/plugins/dropzone/min/dropzone.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/Content/dist/css/adminlte.min.css">
+
+    <!-- summernote -->
+    <link rel="stylesheet" href="/Content/plugins/summernote/summernote-bs4.min.css">
+    <!-- CodeMirror -->
+    <link rel="stylesheet" href="/Content/plugins/codemirror/codemirror.css">
+    <link rel="stylesheet" href="/Content/plugins/codemirror/theme/monokai.css">
+
+    <link rel="stylesheet" href="/Content/plugins/bootstrap-multiselect-checkbox/css/bootstrap-multiselect.css">
+    <link href="/Content/plugins/typeahead/typeahead.css" rel="stylesheet">
+    <link href="/Content/plugins/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+    <link href="/Content/note.css" rel="stylesheet">
+
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/jquery/jquery.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+
+
+<style id="savepage-cssvariables">
+  :root {
+    --savepage-url-33: url(data:image/png;base64,);
+    --savepage-url-34: url(data:image/png;base64,);
+    --savepage-url-35: url(data:image/png;base64,);
+    --savepage-url-36: url(data:image/png;base64,);
+  }
+</style>
+<script id="savepage-shadowloader" type="text/javascript">
+  "use strict";
+  window.addEventListener("DOMContentLoaded",
+  function(event) {
+    savepage_ShadowLoader(5);
+  },false);
+  function savepage_ShadowLoader(c){createShadowDOMs(0,document.documentElement);function createShadowDOMs(a,b){var i;if(b.localName=="iframe"||b.localName=="frame"){if(a<c){try{if(b.contentDocument.documentElement!=null){createShadowDOMs(a+1,b.contentDocument.documentElement)}}catch(e){}}}else{if(b.children.length>=1&&b.children[0].localName=="template"&&b.children[0].hasAttribute("data-savepage-shadowroot")){b.attachShadow({mode:"open"}).appendChild(b.children[0].content);b.removeChild(b.children[0]);for(i=0;i<b.shadowRoot.children.length;i++)if(b.shadowRoot.children[i]!=null)createShadowDOMs(a,b.shadowRoot.children[i])}for(i=0;i<b.children.length;i++)if(b.children[i]!=null)createShadowDOMs(a,b.children[i])}}}
+</script>
+<meta name="savepage-url" content="https://data.thienkhoi.com/Hang/Detail/fgr59l-m3e2124q-418aa89a">
+<meta name="savepage-title" content="Quản lý Kho">
+<meta name="savepage-pubdate" content="Unknown">
+<meta name="savepage-from" content="https://data.thienkhoi.com/Hang/Detail/fgr59l-m3e2124q-418aa89a">
+<meta name="savepage-date" content="Thu Mar 13 2025 16:51:26 GMT+0700 (Indochina Time)">
+<meta name="savepage-state" content="Standard Items; Retain cross-origin frames; Merge CSS images; Remove unsaved URLs; Load lazy images in existing content; Max frame depth = 5; Max resource size = 50MB; Max resource time = 10s;">
+<meta name="savepage-version" content="33.9">
+<meta name="savepage-comments" content="">
+  </head>
+<body class="sidebar-mini" style="height: auto;">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a data-savepage-href="/" href="https://data.thienkhoi.com/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a data-savepage-href="/hang" href="https://data.thienkhoi.com/hang" class="nav-link">Kho hàng</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Thông tin</a>
+        </li>
+    </ul>
+
+
+
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+
+                <!-- Messages Dropdown Menu -->
+                <!--<li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-comments"></i>
+                        <span class="badge badge-danger navbar-badge">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a href="#" class="dropdown-item">-->
+                <!-- Message Start -->
+                <!--<div class="media">
+                    <img src="~/Content/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                    <div class="media-body">
+                        <h3 class="dropdown-item-title">
+                            Brad Diesel
+                            <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                        </h3>
+                        <p class="text-sm">Call me whenever you can...</p>
+                        <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                    </div>
+                </div>-->
+                <!-- Message End -->
+                <!--</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">-->
+                <!-- Message Start -->
+                <!--<div class="media">
+                    <img src="~/Content/dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                    <div class="media-body">
+                        <h3 class="dropdown-item-title">
+                            John Pierce
+                            <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                        </h3>
+                        <p class="text-sm">I got your message bro</p>
+                        <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                    </div>
+                </div>-->
+                <!-- Message End -->
+                <!--</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">-->
+                <!-- Message Start -->
+                <!--<div class="media">
+                    <img src="~/Content/dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                    <div class="media-body">
+                        <h3 class="dropdown-item-title">
+                            Nora Silvester
+                            <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                        </h3>
+                        <p class="text-sm">The subject goes here</p>
+                        <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                    </div>
+                </div>-->
+                <!-- Message End -->
+                <!--</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+                    </div>
+                </li>-->
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown dropdown-user item-cus">
+                    <a class="nav-link notification" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge" id="countNoti">0</span>
+                    </a>
+
+                    <style>
+                        .dropdown-menu-lg {
+                            max-width: 350px !important;
+                            min-width: 330px !important;
+                        }
+
+                        .scroll_y > .tab-pane {
+                            overflow-y: scroll;
+                            max-height: 200px;
+                        }
+                    </style>
+
+                    <div id="menu-rigt-noti" class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <div class="menu-b-notification">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+                                <li class="nav-item">
+                                    <a class="nav-link btnLoadNoti active" data-type="1" data-toggle="pill" href="#allNoti" role="tab" aria-controls="allNoti" aria-selected="true">Thông báo</a>
+                                </li>
+                                
+                            </ul>
+                            
+
+                        </div>
+
+                        <span class="dropdown-item dropdown-header">15 Notifications</span>
+
+                        <div id="progress" style="display:none;text-align:center;">
+                            <h4>Loading...</h4>
+                        </div>
+                        <input type="hidden" value="0" id="txtNumberTab">
+                        <div class="dropdown-divider"></div>
+                       
+                    </div>
+
+
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <form action="/Account/LogOff" method="post" id="frmlogoff">
+                        
+                        <a class="nav-link" onclick="logoff()" href="#" role="button">
+                            <b>Đăng xuất</b>
+                        </a>
+                    </form>
+
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a data-savepage-href="/" href="https://data.thienkhoi.com/" class="brand-link" style="background-color:#fff">
+                <img data-savepage-currentsrc="https://data.thienkhoi.com/Content/dist/img/logoadmin.png" data-savepage-src="/Content/dist/img/logoadmin.png" src="" alt="Thiên Khôi Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light" style="color:red!important;font-weight:bold!important; font-size:20px !important;">Thiên Khôi</span>
+            </a>
+
+            
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <!-- Sidebar user (optional) -->
+    <div class="row user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+            <img data-savepage-currentsrc="https://data.thienkhoi.com/Content/dist/img/user2-160x160.jpg" data-savepage-src="/Content/dist/img/user2-160x160.jpg" src="" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+            <form action="/Account/LogOff" method="post" id="frmlogoff">
+                <a onclick="logoff()" class="d-block">Essi You Phúc</a>
+            </form>
+            <a onclick="#" class="d-block">Đầu khách  #117045 </a>
+            <a onclick="#" class="d-block">HCMPDO0658140451 </a>
+        </div>
+
+    </div>
+
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item "><a class="nav-link" data-savepage-href="/#" href="https://data.thienkhoi.com/#"><i class="icon-briefcase"></i><p>Kho Tổng<i class="fas fa-angle-left right"></i><span class="badge badge-info right"></span></p></a><ul class="nav nav-treeview"><li class="nav-item">
+                                    <a data-savepage-href="/Hang/Index" href="https://data.thienkhoi.com/Hang/Index" class="nav-link ">
+                                        <i class="fa fa-cubes"></i>
+                                        <p>Kho Hàng</p>
+                                    </a>
+                                </li><li class="nav-item">
+                                    <a data-savepage-href="/Hang/Like" href="https://data.thienkhoi.com/Hang/Like" class="nav-link ">
+                                        <i class="fas fa-heart"></i>
+                                        <p>Nhà yêu thích</p>
+                                    </a>
+                                </li></ul></li><li class="nav-item "><a class="nav-link" data-savepage-href="/" href="https://data.thienkhoi.com/"><i class="icon-briefcase"></i><p>Nguồn xác thực<i class="fas fa-angle-left right"></i><span class="badge badge-info right"></span></p></a><ul class="nav nav-treeview"><li class="nav-item">
+                                    <a data-savepage-href="/Hang/BankReview" href="https://data.thienkhoi.com/Hang/BankReview" class="nav-link ">
+                                        <i class="fa fa-pen"></i>
+                                        <p>Chờ duyệt</p>
+                                    </a>
+                                </li><li class="nav-item">
+                                    <a data-savepage-href="/Hang/Bank/5" href="https://data.thienkhoi.com/Hang/Bank/5" class="nav-link ">
+                                        <i class="fa fa-tasks"></i>
+                                        <p>Đối tác MB</p>
+                                    </a>
+                                </li></ul></li><li class="nav-item "><a class="nav-link" data-savepage-href="/#" href="https://data.thienkhoi.com/#"><i class="icon-briefcase"></i><p>Nguồn HĐTĐ<i class="fas fa-angle-left right"></i><span class="badge badge-info right"></span></p></a><ul class="nav nav-treeview"><li class="nav-item">
+                                    <a data-savepage-href="/HangHDTD/Create" href="https://data.thienkhoi.com/HangHDTD/Create" class="nav-link ">
+                                        <i class="fa fa-plus"></i>
+                                        <p>Đăng ký mới</p>
+                                    </a>
+                                </li><li class="nav-item">
+                                    <a data-savepage-href="/HangHDTD/Mylist" href="https://data.thienkhoi.com/HangHDTD/Mylist" class="nav-link ">
+                                        <i class="fa fa-home"></i>
+                                        <p>Nhà của tôi</p>
+                                    </a>
+                                </li></ul></li><li class="nav-item "><a class="nav-link" data-savepage-href="/#" href="https://data.thienkhoi.com/#"><i class="icon-briefcase"></i><p>Khách hàng<i class="fas fa-angle-left right"></i><span class="badge badge-info right"></span></p></a><ul class="nav nav-treeview"><li class="nav-item">
+                                    <a data-savepage-href="/KhachHang" href="https://data.thienkhoi.com/KhachHang" class="nav-link ">
+                                        <i class="fa fa-user"></i>
+                                        <p>Khách của tôi </p>
+                                    </a>
+                                </li></ul></li><li class="nav-item "><a class="nav-link" data-savepage-href="/#" href="https://data.thienkhoi.com/#"><i class="icon-briefcase"></i><p>Báo cáo dẫn khách<i class="fas fa-angle-left right"></i><span class="badge badge-info right"></span></p></a><ul class="nav nav-treeview"><li class="nav-item">
+                                    <a data-savepage-href="/BaoCaoDanKhach/Index" href="https://data.thienkhoi.com/BaoCaoDanKhach/Index" class="nav-link ">
+                                        <i class="fa fa-bell"></i>
+                                        <p>Của tôi</p>
+                                    </a>
+                                </li></ul></li><li class="nav-item "><a class="nav-link" data-savepage-href="/#" href="https://data.thienkhoi.com/#"><i class="icon-briefcase"></i><p>Góp ý - Đề xuất<i class="fas fa-angle-left right"></i><span class="badge badge-info right"></span></p></a><ul class="nav nav-treeview"><li class="nav-item">
+                                    <a data-savepage-href="/NguoiDungGopY/Index" href="https://data.thienkhoi.com/NguoiDungGopY/Index" class="nav-link ">
+                                        <i class="fa fa-bell"></i>
+                                        <p>Của tôi</p>
+                                    </a>
+                                </li></ul></li><li class="nav-item "><a class="nav-link" data-savepage-href="/#" href="https://data.thienkhoi.com/#"><i class="icon-briefcase"></i><p>Bình luận<i class="fas fa-angle-left right"></i><span class="badge badge-info right"></span></p></a><ul class="nav nav-treeview"><li class="nav-item">
+                                    <a data-savepage-href="/BinhLuan/Index" href="https://data.thienkhoi.com/BinhLuan/Index" class="nav-link ">
+                                        <i class="fa fa-pen"></i>
+                                        <p>Của tôi</p>
+                                    </a>
+                                </li></ul></li><li class="nav-item "><a class="nav-link" data-savepage-href="/#" href="https://data.thienkhoi.com/#"><i class="icon-briefcase"></i><p>Tài khoản<i class="fas fa-angle-left right"></i><span class="badge badge-info right"></span></p></a><ul class="nav nav-treeview"><li class="nav-item">
+                                    <a data-savepage-href="/User/ChangePassWord" href="https://data.thienkhoi.com/User/ChangePassWord" class="nav-link ">
+                                        <i class="fas fa-exchange-alt"></i>
+                                        <p>Đổi mật khẩu</p>
+                                    </a>
+                                </li></ul></li>
+
+        </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+</div>
+<!-- /.sidebar -->
+        </aside>
+        
+
+
+<style>
+    .checked {
+        color: orange;
+    }
+
+    .list-image {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .list-image li {
+            margin-bottom: 10px;
+        }
+
+            .list-image li a {
+                display: block;
+            }
+
+                .list-image li a img {
+                    max-width: 100%;
+                    width: 100%;
+                }
+
+    .list-file {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .list-file li {
+            display: block;
+        }
+
+            .list-file li a {
+                color: #333;
+            }
+</style>
+<link href="/Content/plugins/lightgallery-master/dist/css/lightgallery.min.css" rel="stylesheet">
+<input type="hidden" id="app" value="False">
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper" style="min-height: 697.222px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Thông tin chi tiết</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a data-savepage-href="/" href="https://data.thienkhoi.com/">Home</a></li>
+                        <li class="breadcrumb-item"><a data-savepage-href="/hang" href="https://data.thienkhoi.com/hang">Kho hàng</a></li>
+                        <li class="breadcrumb-item active">Thông tin</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content" id="diff">
+        <div class="card-danger">
+        </div>
+        <div class="card card-warning">
+            <div class="card-header">
+
+
+                <h3 class="card-title">
+                    Thông tin
+                    
+                                            <span> &gt;&gt;&gt; Tác động bởi 0903162785</span>
+
+                </h3>
+
+
+            </div>
+            <div class="form-horizontal">
+                <div class="card-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <label>Mã hàng</label><br>
+                                    <input value="TK-8AA89A" type="text" readonly="readonly" autocomplete="off" class="form-control" aria-invalid="false">
+                            </div>
+
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label for="inputTinh">Tỉnh thành</label>
+                                <input id="Detail_sTenTinh" class="form-control" value="Tp. Hồ Chí Minh">
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label for="inputQuan">Quận huyện</label>
+                                <input id="Detail_sTenQuan" class="form-control" value="Quận 7">
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label for="inputPhuong">Phường xã</label>
+                                <input id="Detail_sTenPhuongXa" class="form-control" value="Tân Kiểng">
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <label>Ngõ, số nhà</label>
+<input id="Detail_sDiaChi" name="Detail_sDiaChi" value="55.4 ( SỐ MỚI 52 LÂM VĂN BỀN )" type="text" class="form-control" aria-describedby="Detail_sDiaChi-error" aria-invalid="false">                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <label>Đường phố</label>
+                                <input id="Detail_sDuongPho" name="Detail_sDuongPho" value="Lâm Văn Bền" type="text" class="form-control" aria-describedby="Detail_sDiaChi-error" aria-invalid="false">
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>Trạng thái</label><br>
+                                <input id="Detail_iTrangThai" class="form-control" value="Chuẩn">
+                            </div>
+
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label id="diff_camketdatchuan" style="text-align: center">Cam kết đạt chuẩn</label>
+                                <div>
+                                    <input id="Detail_bCamKetChuan" name="Detail_bCamKetChuan" type="checkbox" checked="checked" style="zoom:2" onclick="return false"><input id="Detail_bCamKetChuan_Kem_" name="Detail_bCamKetChuan_Kem_" value="1" type="hidden" khong-nhap="-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <label>Nội dung</label>
+                                <textarea id="Detail_sNoiDung" name="Detail_sNoiDung" class="form-control" style="height:80px">55.4 ( SỐ MỚI 52 LÂM VĂN BỀN ) Lâm Văn Bền 227.9 3 4 40 32 tỷ Tân Kiểng Quận 7 25-50 tỷ HĐ Đoàn Khắc Châu Sang Bảo Tín 0906077072 H2GB nguồn Đối tác</textarea>
+
+                                <span id="Detail_Nội dung-error" class="error invalid-feedback" style="display: none;"></span>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                    <label for="inputTinh">Tiêu chí BĐS<span class="field-validation-error"> *</span></label>
+                                    <select id="Detail_sLoaiHang" name="Detail_sLoaiHang" aria-describedby="Detail_sLoaiHang-error" aria-invalid="false" multiple="multiple" style="display: none;">
+                                        <option value="A">Triệu đô</option><option value="B">Dòng tiền ổn định</option><option value="C">Hiếm</option><option value="D">View hồ - công viên</option><option value="E">Nội thất đẹp - giá trị</option><option value="F">Để ở</option><option value="G">Để kinh doanh</option><option value="H">Lãi vốn (rẻ)</option><option value="J">Chủ cần bán gấp</option><option value="K">Hẻm ô tô</option><option value="L">Hẻm xe máy</option><option value="M">Đất - nhà cấp 4 - nhà cũ</option><option value="O">Chưa được cấp CNQSD</option><option value="X">Chính chủ</option><option value="T">Dân đầu tư</option><option value="U">Thế chấp ngân hàng</option><option value="I">Thang máy</option><option value="P">Mặt phố</option><option value="Y">Lô góc</option><option value="Z">Bảo lãnh hoa hồng</option><option value="W">Độc quyền bán</option><option value="Q">Chung cư</option>
+                                    </select><div class="btn-group w-100" id="sTenLoaiHang"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Triệu đô, Dòng tiền ổn định, Hiếm, Để kinh doanh, Chủ cần bán gấp, Mặt phố"><span class="multiselect-selected-text">6 selected</span> <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="multiselect-item filter" value="0"><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control multiselect-search" type="text" placeholder="Search" value=""><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button></span></div></li><li class="multiselect-item multiselect-all"><a tabindex="0" class="multiselect-all"><label class="checkbox"><input type="checkbox" value="multiselect-all">  Select all</label></a></li><li class="active"><a tabindex="0"><label class="checkbox"><input type="checkbox" value="A" checked=""> Triệu đô</label></a></li><li class="active"><a tabindex="0"><label class="checkbox"><input type="checkbox" value="B" checked=""> Dòng tiền ổn định</label></a></li><li class="active"><a tabindex="0"><label class="checkbox"><input type="checkbox" value="C" checked=""> Hiếm</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="D"> View hồ - công viên</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="E"> Nội thất đẹp - giá trị</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="F"> Để ở</label></a></li><li class="active"><a tabindex="0"><label class="checkbox"><input type="checkbox" value="G" checked=""> Để kinh doanh</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="H"> Lãi vốn (rẻ)</label></a></li><li class="active"><a tabindex="0"><label class="checkbox"><input type="checkbox" value="J" checked=""> Chủ cần bán gấp</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="K"> Hẻm ô tô</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="L"> Hẻm xe máy</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="M"> Đất - nhà cấp 4 - nhà cũ</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="O"> Chưa được cấp CNQSD</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="X"> Chính chủ</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="T"> Dân đầu tư</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="U"> Thế chấp ngân hàng</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="I"> Thang máy</label></a></li><li class="active"><a tabindex="0"><label class="checkbox"><input type="checkbox" value="P" checked=""> Mặt phố</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="Y"> Lô góc</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="Z"> Bảo lãnh hoa hồng</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="W"> Độc quyền bán</label></a></li><li><a tabindex="0"><label class="checkbox"><input type="checkbox" value="Q"> Chung cư</label></a></li></ul></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-12">
+                                <label>Diện tích trên sổ (m)</label>
+                                <input id="Detail_iDienTichSo_show" name="Detail_iDienTichSo_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="227.9" type="text" readonly="readonly" class="form-control" placeholder="Diện tích" aria-describedby="Detail_sDiaChi-error" aria-invalid="false"><input type="hidden" id="Detail_iDienTichSo" name="Detail_iDienTichSo" value="227.9">
+
+                            </div>
+                            <div class="col-md-3 col-xs-12">
+                                <label>Diện tích thực tế (m)</label>
+                                <input id="Detail_iDienTich_show" name="Detail_iDienTich_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="227.9" type="text" readonly="readonly" class="form-control" placeholder="Diện tích" aria-describedby="Detail_sDiaChi-error" aria-invalid="false"><input type="hidden" id="Detail_iDienTich" name="Detail_iDienTich" value="227.9">
+
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <div class="row">
+
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <label>Mặt tiền (m)</label>
+                                    <input id="Detail_iMatTien_show" name="Detail_iMatTien_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="4.0" type="text" readonly="readonly" class="form-control" placeholder="Mặt tiền" aria-describedby="Detail_sDiaChi-error" aria-invalid="false"><input type="hidden" id="Detail_iMatTien" name="Detail_iMatTien" value="4.0">
+
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <label>Chiều dài (m)</label>
+                                    <input id="Detail_iDai_show" name="Detail_iDai_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="40.0" type="text" readonly="readonly" class="form-control" placeholder="Chiều dài" aria-describedby="Detail_iDai-error" aria-invalid="false"><input type="hidden" id="Detail_iDai" name="Detail_iDai" value="40.0">
+
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <label>Đường trước nhà (m)</label>
+                                    <input id="Detail_iDuongVao_show" name="Detail_iDuongVao_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="20.0" type="text" readonly="readonly" class="form-control" placeholder="Đường vào" aria-describedby="Detail_sDiaChi-error" aria-invalid="false"><input type="hidden" id="Detail_iDuongVao" name="Detail_iDuongVao" value="20.0">
+
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    <div class="form-group">
+                        <div class="row">
+
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <label>Số tầng</label>
+                                <input id="Detail_iSoTang_show" name="Detail_iSoTang_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="3.0" type="text" readonly="readonly" class="form-control" placeholder="Số tầng" aria-describedby="Detail_sDiaChi-error" aria-invalid="false"><input type="hidden" id="Detail_iSoTang" name="Detail_iSoTang" value="3.0">                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>Số phòng ngủ</label>
+                                <input id="Detail_iSoPhongNgu_show" name="Detail_iSoPhongNgu_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="" type="text" readonly="readonly" class="form-control" placeholder="Số phòng ngủ" aria-describedby="Detail_sDiaChi-error" aria-invalid="false"><input type="hidden" id="Detail_iSoPhongNgu" name="Detail_iSoPhongNgu" value="0">
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>Số nhà vệ sinh</label>
+                                <input id="Detail_iSoToilet_show" name="Detail_iSoToilet_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="" type="text" readonly="readonly" class="form-control" placeholder="Số toilet" aria-describedby="Detail_sDiaChi-error" aria-invalid="false"><input type="hidden" id="Detail_iSoToilet" name="Detail_iSoToilet" value="0">
+
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>Số ban công</label>
+                                <input id="Detail_iSoBanCong_show" name="Detail_iSoBanCong_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="" type="text" readonly="readonly" class="form-control" placeholder="Số ban công" aria-describedby="Detail_iSoBanCong-error" aria-invalid="false"><input type="hidden" id="Detail_iSoBanCong" name="Detail_iSoBanCong" value="0">
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>Giá chào hợp đồng (Triệu VNĐ)</label>
+                                <input id="Detail_iGiaChaoHopDong_show" name="Detail_iGiaChaoHopDong_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="32,000" type="text" readonly="readonly" class="form-control" placeholder="Giá chào hợp đồng" aria-describedby="Detail_sDiaChi-error" aria-invalid="false"><input type="hidden" id="Detail_iGiaChaoHopDong" name="Detail_iGiaChaoHopDong" value="32000">
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>% Hoa hồng</label>
+                                <input id="Detail_iPhanTramHoaHong_show" name="Detail_iPhanTramHoaHong_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="2.0" type="text" readonly="readonly" class="form-control" placeholder="% Hoa hồng" aria-describedby="Detail_sDiaChi-error" aria-invalid="false"><input type="hidden" id="Detail_iPhanTramHoaHong" name="Detail_iPhanTramHoaHong" value="2.0">
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>Tiền hoa hồng (Triệu VNĐ)</label>
+                                <input id="Detail_iTienHoaHong_show" name="Detail_iTienHoaHong_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="" type="text" readonly="readonly" class="form-control" placeholder="Tiền hoa hồng" aria-describedby="Detail_sDiaChi-error" aria-invalid="false"><input type="hidden" id="Detail_iTienHoaHong" name="Detail_iTienHoaHong" value="0">
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <label>Hướng nhà</label>
+                                <select id="Detail_iID_HuongNha" name="Detail_iID_HuongNha" disabled="disabled" class="form-control"><option value="0" selected="">-- Chọn Hướng --</option><option value="1">Đông</option><option value="2">Tây</option><option value="3">Nam</option><option value="4">Bắc</option><option value="5">Đông-Bắc</option><option value="6">Tây-Bắc</option><option value="7">Tây-Nam</option><option value="8">Đông-Nam</option></select>
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>Nguồn</label>
+                                <select id="Detail_iID_Nguon" name="Detail_iID_Nguon" disabled="disabled" class="form-control"><option value="0">--Nguồn hàng--</option><option value="1">Đầu chủ</option><option value="4" selected="">Đối tác</option><option value="2">Hội đồng thẩm định</option><option value="3">Chính chủ AI</option></select>
+
+                            </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <label>Điện thoại nguồn hàng</label>
+
+                                    <input id="Detail_sDienThoaiNguonHang" name="Detail_sDienThoaiNguonHang" value="" type="text" readonly="readonly" autocomplete="off" class="form-control" placeholder="Điện thoại nguồn hàng" aria-describedby="Detail_sDienThoaiNguonHang-error" aria-invalid="false">
+                                    <span id="Detail_sDienThoaiNguonHang-error" class="error invalid-feedback" style="display: none;"></span>
+
+                                </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>Tên chủ nhà</label>
+                                <input id="Detail_sTenChuNha" name="Detail_sTenChuNha" value="Cô Năm" type="text" readonly="readonly" autocomplete="off" class="form-control" aria-describedby="Detail_sTenChuNha-error" aria-invalid="false">
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>Điện thoại chủ nhà</label>
+                                    <input id="Detail_sDienThoaiChuNha" name="Detail_sDienThoaiChuNha" value="xxxxxx3683" type="text" readonly="readonly" autocomplete="off" class="form-control" aria-describedby="Detail_sDienThoaiChuNha-error" aria-invalid="false">
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>Điện thoại đầu chủ</label>
+<input id="Detail_sDienThoaiDauChu" name="Detail_sDienThoaiDauChu" value="0906077072" type="text" readonly="readonly" class="form-control" placeholder="Điện thoại đầu chủ" aria-describedby="Detail_sDiaChi-error" aria-invalid="false">                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>Hợp đồng</label>
+<input id="Detail_sHopDongDauChu" name="Detail_sHopDongDauChu" value="Đoàn Khắc Châu Sang" type="text" readonly="readonly" class="form-control" placeholder="Hợp đồng đầu chủ" aria-describedby="Detail_sDiaChi-error" aria-invalid="false">                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <label>Điểm</label>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                <label> Facebook</label>
+                                <a href="https://www.facebook.com/profile.php?id=100074042075445" target="_blank'" class="form-control">https://www.facebook.com/profile.php?id=100074042075445</a>
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>Lat</label>
+                                <input id="Detail_iLat_show" name="Detail_iLat_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="10.749222045684453" type="text" class="form-control" placeholder="Lat" aria-describedby="Detail_sDiaChi-error" aria-invalid="false"><input type="hidden" id="Detail_iLat" name="Detail_iLat" value="10.749222045684453">
+
+
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <label>Lng</label>
+                                <input id="Detail_iLng_show" name="Detail_iLng_show" nhap-so="1" loai-nhap="1" so-sau-dau-phay="-1" value="106.71578608453274" type="text" class="form-control" placeholder="Lng" aria-describedby="Detail_sDiaChi-error" aria-invalid="false"><input type="hidden" id="Detail_iLng" name="Detail_iLng" value="106.71578608453274">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- /.form-group -->
+                    
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                        <label>Mô tả</label>
+                        <div>
+                            <div>KÝ VỚI CHỊ CHỦ NHÀ</div><div>🇻🇳🇻🇳🇻🇳SIÊU HIẾM- NHÀ 3 TẦNG MẶT TIỀN LÂM VĂN BỀN - KDC HIỆN HỮU - CHỈ 140TR/ M2 - THỊ TRƯỜNG KO CÓ CĂN THỨ 2</div><div><br></div><div>Mô tả</div><div>✅ CHÍNH CHỦ CẦN BÁN NHÀ 3 TẦNG MẶT TIỀN LÂM VĂN BỀN - </div><div>✅ DT: 4.1 X 40. NỞ HẬU 8M</div><div>✅ KẾT CẤU : TRỆT 2 LẦU </div><div>✅ SHR + HOÀN CÔNG ĐỦ</div><div>✅ NHÀ ĐANG CHO THUÊ </div><div>✅ VỊ TRÍ VÔ CÙNG ĐẮC ĐỊA. LIỀN KỀ CƯ XÁ NGÂN HÀNG VÀ TRƯỜNG NGUYỄN HỮU THỌ. THÍCH HỢP XÂY CHDV</div><div>✅ NHÀ 3 TẦNG HOÀN CÔNG ĐỦ NHƯNG CHỦ XÁC ĐỊNH BÁN ĐẤT. KHÁCH THIỆN CHÍ MỚI CHO XEM TRONG. AE NẮM Ý NÀY ĐỂ TƯ VẤN KHÁCH</div><div>✅ GIÁ RẺ HƠN THỊ TRƯỜNG 30% NÊN CHỦ CHỈ BỚT LỘC.</div><div>✅ CHỦ THIỆN CHÍ VÀ HỢP TÁC</div><div>✅ CHÚC ACE CHỐT SỚM CĂN NHÀ NÀY</div><div><br></div><div><br></div><div>❤ ACE khảo sát để biết thêm ưu điểm của căn nhà. Nhớ ký phiếu YCCCDV và Báo cáo dẫn khách đầy đủ để đảm bảo quyền lợi của mình</div><div>❤ LH ĐC Châu Sang qua Fb: Châu Sang hoặc Zalo 0906077072 để biết thêm chi tiết</div><div>❤ Cám ơn ACE đã xem tin ,</div>
+                        </div>
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                        <div class="row">
+                                <div class="col-md-3 col-xs-12">
+                                    <label>Số seri sổ đỏ</label>
+
+                                    <input id="Detail_sSoSoDo" name="Detail_sSoSoDo" value="*" disabled="disabled" type="text" readonly="readonly" class="form-control" placeholder="Số seri sổ đỏ">
+
+                                </div>
+                            <div class="col-md-3 col-xs-12">
+
+                            </div>
+
+                            <div class="col-md-3 col-xs-12">
+
+                            </div>
+                            <div class="col-md-3 col-xs-12">
+                            </div>
+                            <div class="col-md-3 col-xs-12"></div>
+                        </div>
+                    </div>
+                    <!-- /.form-group -->
+
+                    <!-- /.form-group -->
+
+
+                    <div class="form-group">
+                        <label>Ảnh nhà đất</label>
+                        <ul class="list-image row" id="lightgalleryND" lg-uid="lg0">
+                                    <li class="col-md-3 col-sm-6 col-12" data-src="https://tk-assets.spms2.com/2024/11/12/11wv-871FDC4D-m3e213af_31_9.jpg" id="2549806_3">
+                                        <a href="">
+                                            <img data-savepage-src="https://tk-assets.spms2.com/2024/11/12/11wv-871FDC4D-m3e213af_31_9.jpg" src="" title="">
+                                        </a>
+                                    </li>
+                                    <li class="col-md-3 col-sm-6 col-12" data-src="https://tk-assets.spms2.com/2024/11/12/11wv-871FDC4D-m3e213af_33_10.jpg" id="2549807_3">
+                                        <a href="">
+                                            <img data-savepage-src="https://tk-assets.spms2.com/2024/11/12/11wv-871FDC4D-m3e213af_33_10.jpg" src="" title="">
+                                        </a>
+                                    </li>
+                                    <li class="col-md-3 col-sm-6 col-12" data-src="https://tk-assets.spms2.com/2024/11/12/11wv-871FDC4D-m3e213af_35_11.jpg" id="2549808_3">
+                                        <a href="">
+                                            <img data-savepage-src="https://tk-assets.spms2.com/2024/11/12/11wv-871FDC4D-m3e213af_35_11.jpg" src="" title="">
+                                        </a>
+                                    </li>
+                        </ul>
+                    </div>
+                    <!-- /.form-group -->
+                </div>
+
+                <div class="card-footer text-center">
+                </div>
+                <!-- /.card-footer -->
+            </div>
+        </div>
+    </section>
+    <section class="content-header" id="panelContentBank" style="background: rgb(236, 236, 223); display: none;">
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <label>Trạng thái</label>
+                    <input class="form-control" readonly="" style="background: #39e600" value="Đã duyệt">
+                </div>
+                <div class="col-md-3 col-xs-12">
+                        <label>Mã hàng: </label> <h2 style="color:red">1UCT</h2>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <br>
+
+
+
+                </div>
+            </div>
+        </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <label>Điện thoại liên hệ<span class="field-validation-error"> *</span></label>
+                        <input id="Detail_sDienThoaiBank" name="Detail_sDienThoaiBank" value="0903162785" type="text" readonly="readonly" maxlength="10" autocomplete="off" class="form-control" aria-describedby="Detail_sDienThoaiBank-error" aria-invalid="false">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <label>Tiêu đề<span class="field-validation-error"> *</span></label>
+                        <textarea id="Detail_sNoiDungBank" name="Detail_sNoiDungBank" class="form-control" readonly="readonly" style="height:100px" maxlength="200">Quận 7. P Tân Kiểng. Đường Lâm Văn Bền. Nhà 3 Tầng. 228m2. Giá 32 Tỷ</textarea>
+
+                    </div>
+                </div>
+            </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                        <label>Mô tả<span class="field-validation-error"> *</span></label>
+<textarea id="Detail_sMoTaBank" name="Detail_sMoTaBank" class="form-control" readonly="readonly" style="height:200px">🇻🇳🇻🇳🇻🇳SIÊU HIẾM- NHÀ 3 TẦNG MẶT TIỀN LÂM VĂN BỀN - KDC HIỆN HỮU - CHỈ 140TR/ M2 - THỊ TRƯỜNG KO CÓ CĂN THỨ 2
+Mô tả
+✅ CHÍNH CHỦ CẦN BÁN NHÀ 3 TẦNG MẶT TIỀN LÂM VĂN BỀN 
+✅ DT: 4.1 X 40. NỞ HẬU 8M
+✅ KẾT CẤU : TRỆT 2 LẦU 
+✅ SHR + HOÀN CÔNG ĐỦ
+✅ NHÀ ĐANG CHO THUÊ 
+✅ VỊ TRÍ VÔ CÙNG ĐẮC ĐỊA. LIỀN KỀ CƯ XÁ NGÂN HÀNG VÀ TRƯỜNG NGUYỄN HỮU THỌ. THÍCH HỢP XÂY CHDV
+✅ NHÀ 3 TẦNG HOÀN CÔNG ĐỦ NHƯNG CHỦ XÁC ĐỊNH BÁN ĐẤT. KHÁCH THIỆN CHÍ MỚI CHO XEM TRONG. AE NẮM Ý NÀY ĐỂ TƯ VẤN KHÁCH
+✅ GIÁ RẺ HƠN THỊ TRƯỜNG 30% NÊN CHỦ CHỈ BỚT LỘC.
+✅ CHỦ THIỆN CHÍ VÀ HỢP TÁC</textarea>                </div>
+
+                <div class="col-md-6 col-xs-12">
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Chọn ảnh giới thiệu hàng</label>
+            <ul class="list-image row" id="lightgalleryBank">
+                        <li class="col-md-3 col-sm-6 col-12" data-src="https://tk-assets.spms2.com/2024/11/12/11wv-871FDC4D-m3e213af_31_9.jpg" id="2549806_3">
+                            <input type="checkbox" checked="" disabled="" class="publicFile" style="zoom: 2;" name="PublicFile" id="PublicFile-2549806" value="False" data-id="fgr59l-m3e2124q-418aa89a" data-file="2549806" data-loaifile="3">
+                            <a href="">
+                                <img data-savepage-src="https://tk-assets.spms2.com/2024/11/12/11wv-871FDC4D-m3e213af_31_9.jpg" src="" style="width: 50%; height: 50%">
+                            </a>
+                        </li>
+                        <li class="col-md-3 col-sm-6 col-12" data-src="https://tk-assets.spms2.com/2024/11/12/11wv-871FDC4D-m3e213af_33_10.jpg" id="2549807_3">
+                            <input type="checkbox" checked="" disabled="" class="publicFile" style="zoom: 2;" name="PublicFile" id="PublicFile-2549807" value="False" data-id="fgr59l-m3e2124q-418aa89a" data-file="2549807" data-loaifile="3">
+                            <a href="">
+                                <img data-savepage-src="https://tk-assets.spms2.com/2024/11/12/11wv-871FDC4D-m3e213af_33_10.jpg" src="" style="width: 50%; height: 50%">
+                            </a>
+                        </li>
+                        <li class="col-md-3 col-sm-6 col-12" data-src="https://tk-assets.spms2.com/2024/11/12/11wv-871FDC4D-m3e213af_35_11.jpg" id="2549808_3">
+                            <input type="checkbox" checked="" disabled="" class="publicFile" style="zoom: 2;" name="PublicFile" id="PublicFile-2549808" value="False" data-id="fgr59l-m3e2124q-418aa89a" data-file="2549808" data-loaifile="3">
+                            <a href="">
+                                <img data-savepage-src="https://tk-assets.spms2.com/2024/11/12/11wv-871FDC4D-m3e213af_35_11.jpg" src="" style="width: 50%; height: 50%">
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--<section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Báo cáo dẫn khách</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">-->
+    
+
+    <!--</ol>
+            </div>
+        </div>
+    </div>-->
+    <!-- /.container-fluid -->
+    <!--</section>
+    <section class="content">-->
+    <!-- Default box -->
+    <!--<div class="card">
+            Html.Action("Partial_Item", "BaoCaoDanKhach", new sBaoCaoDanKhachModels { iID_Hang = ViewBag.ID })
+
+        </div>
+    </section>-->
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+
+<div class="modal fade" id="modal-success">
+    <div class="modal-dialog">
+        <div class="modal-content bg-success">
+            <div class="modal-header">
+                <h4 class="modal-title">Đã cọc</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc muốn chuyển trạng thái <strong>Đã cọc</strong> bản ghi này không?</p>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-outline-light btn-danger" data-dismiss="modal">Đóng</button>
+                <button type="button" id="btnDaCoc" data-id="fgr59l-m3e2124q-418aa89a" class="btn btn-outline-light">Xác nhận</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal success-->
+<div class="modal fade" id="modal-warning">
+    <div class="modal-dialog">
+        <form id="frmDaBan" method="post">
+            <input type="hidden" id="Detail_iID_Hang" name="Detail_iID_Hang" value="fgr59l-m3e2124q-418aa89a">
+            <div class="modal-content bg-warning">
+                <div class="modal-header">
+                    <h4 class="modal-title">Quyết định</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- /. OPTIONS để set giá chốt là bắt buộc hay không bắt buộc -->
+
+
+                    <!--<div class="form-group">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8 col-xs-12">
+                                <!--/. Trường bắt buộc -->
+
+                                <!--<label>Giá chốt</label>
+                                MvcHtmlString.Create(MyHtmlHelper.TextBox(new { ParentID = ParentID, data = data, TenTruong = "iGiaBanThucTe", LoaiTextBox = "0", Attributes = string.Format("type='text' class='form-control' autocomplete='off' placeholder='Giá chốt' aria-describedby='{0}_iGiaBanThucTe-error' aria-invalid='false'", ParentID) }))
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8 col-xs-12">
+                                <label>Đầu khách</label>
+                                MvcHtmlString.Create(MyHtmlHelper.Autocomplete(ParentID, data, "sTaiKhoanDauKhach", "sHoTenDauKhach", "", "type=\"text\" class=\"typeahead form-control\" placeholder='Nhập CCCD/CMT'"))
+                                
+                            </div>
+                        </div>
+                    </div>-->
+                    <!-- /. Họ tên khách mua -->
+                    <!-- /. Số điện thoại khách mua -->
+                    <!-- /. CCCD khách mua -->
+                    <!-- /. D/c thường trú -->
+
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-outline-light btn-danger" data-dismiss="modal">Đóng</button>
+                    <button type="submit" id="btnDaBan" data-id="fgr59l-m3e2124q-418aa89a" class="btn btn-outline-light">Xác nhận</button>
+                </div>
+            </div>
+
+        </form>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal warning-->
+<div class="modal fade" id="modal-DinhChiHang">
+    <div class="modal-dialog">
+        <form class="form-horizontal" id="frmDinhChiHang" method="post">
+            <input type="hidden" id="Detail_iID_Hang" name="Detail_iID_Hang" value="fgr59l-m3e2124q-418aa89a">
+            <input type="hidden" id="actionDC" value="" name="Detail_actionDC">
+            <div class="modal-content bg-danger">
+                <div class="modal-header">
+                    <h4 class="modal-title">Lý do</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-2 col-xs-12">
+                                <textarea id="" name="Detail_sLydoDinhChi" rows="5" cols="60" maxlength="200"></textarea>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-outline-light btn-danger" data-dismiss="modal">Đóng</button>
+                    <button type="submit" id="btnDinhChiHang" data-id="fgr59l-m3e2124q-418aa89a" class="btn btn-outline-light">Xác nhận</button>
+                </div>
+            </div>
+        </form>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!--<div class="modal fade" id="modal-GoKhoBank">
+    <div class="modal-dialog">
+        <form class="form-horizontal" id="frmDinhChiHang" method="post">
+            <input type="hidden" id="Detail_iID_Hang" name="Detail_iID_Hang" value="fgr59l-m3e2124q-418aa89a" />
+            <input type="hidden" id="actionDC" value="" name="Detail_actionDC" />
+            <div class="modal-content bg-danger">
+                <div class="modal-header">
+                    <h4 class="modal-title">Lý do</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <textarea id="bGhiChu" name="bGhiChu" rows="5" cols="60" maxlength="200">
+
+                </textarea>
+
+                </div>
+
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-outline-light btn-danger" data-dismiss="modal">Đóng</button>
+                    <button type="submit" id="btnOK" class="btn btn-outline-light">Xác nhận</button>
+                </div>
+            </div>
+            }
+<!-- /.modal-content -->
+<!--</form>
+</div>-->
+<!-- /.modal-dialog -->
+<!--</div>-->
+
+
+
+<div class="modal fade" id="modal-danger">
+    <div class="modal-dialog">
+        <div class="modal-content bg-danger">
+            <div class="modal-header">
+                <h4 class="modal-title">Quyết định</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc muốn chuyển trạng thái <strong>Tạm dừng bán</strong> bản ghi này không?</p>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-outline-light btn-danger" data-dismiss="modal">Đóng</button>
+                <button type="button" id="btnDungBan" data-id="fgr59l-m3e2124q-418aa89a" class="btn btn-outline-light">Xác nhận</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade" id="modal-banlai">
+    <div class="modal-dialog">
+        <div class="modal-content bg-danger">
+            <div class="modal-header">
+                <h4 class="modal-title">Quyết định</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc muốn chuyển trạng thái <strong>Chuẩn</strong> bản ghi này không?</p>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-outline-light btn-danger" data-dismiss="modal">Đóng</button>
+                <button type="button" id="btnBanLai" data-id="fgr59l-m3e2124q-418aa89a" class="btn btn-outline-light">Xác nhận</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!-- /.modal warning-->
+<div class="modal fade" id="modal-chimtroicabe">
+    <div class="modal-dialog">
+        <div class="modal-content bg-danger">
+            <div class="modal-header">
+                <h4 class="modal-title">Quyết định</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc muốn chuyển trạng thái <strong>Chim trời cá bể</strong> bản ghi này không?</p>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-outline-light btn-danger" data-dismiss="modal">Đóng</button>
+                <button type="button" id="btnChimTroiCaBe" data-id="fgr59l-m3e2124q-418aa89a" class="btn btn-outline-light">Xác nhận</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+
+<div class="modal fade" id="modal-GhiChu">
+    <div class="modal-dialog">
+<form action="/Hang/GhiChu?Length=4" class="form-horizontal" data-ajax="true" data-ajax-failure="OnFailure" data-ajax-success="OnSuccess" id="form0" method="post">            <div class="modal-content bg-success">
+
+                <input type="hidden" id="txtid" name="txtid" value="fgr59l-m3e2124q-418aa89a">
+                <div class="modal-header">
+                    <h4 class="modal-title">Bình luận</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <textarea id="txtGhiChu" name="txtGhiChu" rows="5" cols="60">
+                </textarea>
+
+                </div>
+
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-outline-light btn-danger" data-dismiss="modal">Đóng</button>
+                    <button type="submit" id="btnGhiChu" class="btn btn-outline-light">Xác nhận</button>
+                </div>
+            </div>
+</form>        <script data-savepage-type="" type="text/plain"></script>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!-- /.modal warning-->
+<div class="modal fade" id="modal-GuiKhoBank">
+    <div class="modal-dialog">
+        <div class="modal-content bg-success">
+            <div class="modal-header">
+                <h4 class="modal-title">Gửi Nguồn xác thực</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body mbody">
+                <p>Bạn có chắc muốn <strong>Gửi Nguồn xác thực</strong> hàng này không?</p>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-outline-light btn-danger" data-dismiss="modal">Đóng</button>
+                <button type="button" id="btnGuiKhoBank" data-id="fgr59l-m3e2124q-418aa89a" class="btn btn-outline-light">Xác nhận</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade" id="modal-GoKhoBank">
+    <div class="modal-dialog">
+<form action="/Hang/GoKhoBank?Length=4" class="form-horizontal" data-ajax="true" data-ajax-begin="OnBegin" data-ajax-failure="OnFailure" data-ajax-success="OnSuccess" id="form1" method="post">            <div class="modal-content bg-danger">
+                <input type="hidden" id="bkhobank" name="bkhobank" value="">
+                <input type="hidden" id="bid" name="bid" value="fgr59l-m3e2124q-418aa89a">
+                <input type="hidden" id="bowner" name="bowner" value="0909978987">
+                <div class="modal-header">
+                    <h4 class="modal-title">Lý do</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <textarea id="bGhiChu" name="bGhiChu" rows="5" cols="60" maxlength="200">
+                </textarea>
+
+                </div>
+
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-outline-light btn-danger" data-dismiss="modal">Đóng</button>
+                    <button type="submit" id="btnOK" class="btn btn-outline-light">Xác nhận</button>
+                </div>
+            </div>
+</form>        <script data-savepage-type="" type="text/plain"></script>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+
+<div class="modal fade" id="modal_diff_seri">
+    <div class="modal-dialog">
+        <form class="form-horizontal" id="form_diff_seri" method="get">
+            <input type="hidden" id="Detail_iID_Hang" name="Detail_iID_Hang" value="fgr59l-m3e2124q-418aa89a">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Lịch sử</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body pb-0" "="">
+                    <table id="lst_seri" class="mb-0 table table-striped">
+                    </table>
+                </div>
+            </div>
+        </form>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<script data-savepage-type="" type="text/plain" data-savepage-src="/Scripts/jsHang.js?time=20250313164617"></script>
+<!-- /.modal warning-->
+
+
+
+        <footer class="main-footer">
+
+            Copyright © 2023 <strong><a href="#">BẤT ĐỘNG SẢN THIÊN KHÔI</a>.</strong> All rights reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        <div class="p-3 control-sidebar-content"><h5>Customize AdminLTE</h5><hr class="mb-2"><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Dark Mode</span></div><h6>Header Options</h6><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Dropdown Legacy Offset</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>No border</span></div><h6>Sidebar Options</h6><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Collapsed</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div><div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Sidebar Mini</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini MD</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini XS</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Flat Style</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Legacy Style</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Compact</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Indent</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Hide on Collapse</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Disable Hover/Focus Auto-Expand</span></div><h6>Footer Options</h6><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div><h6>Small Text Options</h6><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Body</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Navbar</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Brand</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Nav</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Footer</span></div><h6>Navbar Variants</h6><div class="d-flex"><select class="custom-select mb-3 text-light border-0 bg-white"><option class="bg-primary">Primary</option><option class="bg-secondary">Secondary</option><option class="bg-info">Info</option><option class="bg-success">Success</option><option class="bg-danger">Danger</option><option class="bg-indigo">Indigo</option><option class="bg-purple">Purple</option><option class="bg-pink">Pink</option><option class="bg-navy">Navy</option><option class="bg-lightblue">Lightblue</option><option class="bg-teal">Teal</option><option class="bg-cyan">Cyan</option><option class="bg-dark">Dark</option><option class="bg-gray-dark">Gray dark</option><option class="bg-gray">Gray</option><option class="bg-light">Light</option><option class="bg-warning">Warning</option><option class="bg-white">White</option><option class="bg-orange">Orange</option></select></div><h6>Accent Color Variants</h6><div class="d-flex"></div><select class="custom-select mb-3 border-0"><option>None Selected</option><option class="bg-primary">Primary</option><option class="bg-warning">Warning</option><option class="bg-info">Info</option><option class="bg-danger">Danger</option><option class="bg-success">Success</option><option class="bg-indigo">Indigo</option><option class="bg-lightblue">Lightblue</option><option class="bg-navy">Navy</option><option class="bg-purple">Purple</option><option class="bg-fuchsia">Fuchsia</option><option class="bg-pink">Pink</option><option class="bg-maroon">Maroon</option><option class="bg-orange">Orange</option><option class="bg-lime">Lime</option><option class="bg-teal">Teal</option><option class="bg-olive">Olive</option></select><h6>Dark Sidebar Variants</h6><div class="d-flex"></div><select class="custom-select mb-3 text-light border-0 bg-primary"><option>None Selected</option><option class="bg-primary">Primary</option><option class="bg-warning">Warning</option><option class="bg-info">Info</option><option class="bg-danger">Danger</option><option class="bg-success">Success</option><option class="bg-indigo">Indigo</option><option class="bg-lightblue">Lightblue</option><option class="bg-navy">Navy</option><option class="bg-purple">Purple</option><option class="bg-fuchsia">Fuchsia</option><option class="bg-pink">Pink</option><option class="bg-maroon">Maroon</option><option class="bg-orange">Orange</option><option class="bg-lime">Lime</option><option class="bg-teal">Teal</option><option class="bg-olive">Olive</option></select><h6>Light Sidebar Variants</h6><div class="d-flex"></div><select class="custom-select mb-3 border-0"><option>None Selected</option><option class="bg-primary">Primary</option><option class="bg-warning">Warning</option><option class="bg-info">Info</option><option class="bg-danger">Danger</option><option class="bg-success">Success</option><option class="bg-indigo">Indigo</option><option class="bg-lightblue">Lightblue</option><option class="bg-navy">Navy</option><option class="bg-purple">Purple</option><option class="bg-fuchsia">Fuchsia</option><option class="bg-pink">Pink</option><option class="bg-maroon">Maroon</option><option class="bg-orange">Orange</option><option class="bg-lime">Lime</option><option class="bg-teal">Teal</option><option class="bg-olive">Olive</option></select><h6>Brand Logo Variants</h6><div class="d-flex"></div><select class="custom-select mb-3 border-0"><option>None Selected</option><option class="bg-primary">Primary</option><option class="bg-secondary">Secondary</option><option class="bg-info">Info</option><option class="bg-success">Success</option><option class="bg-danger">Danger</option><option class="bg-indigo">Indigo</option><option class="bg-purple">Purple</option><option class="bg-pink">Pink</option><option class="bg-navy">Navy</option><option class="bg-lightblue">Lightblue</option><option class="bg-teal">Teal</option><option class="bg-cyan">Cyan</option><option class="bg-dark">Dark</option><option class="bg-gray-dark">Gray dark</option><option class="bg-gray">Gray</option><option class="bg-light">Light</option><option class="bg-warning">Warning</option><option class="bg-white">White</option><option class="bg-orange">Orange</option><a href="#">clear</a></select></div></aside>
+        <!-- /.control-sidebar -->
+    <div id="sidebar-overlay"></div></div>
+    <!-- ./wrapper -->
+    <input type="hidden" value="" id="hId">
+    <input type="hidden" value="0" id="hCheckManHinh">
+    <input type="hidden" value="0909978987" id="hUserName">
+
+    <!-- Bootstrap 4 -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- DataTables  & Plugins -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/jszip/jszip.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/pdfmake/pdfmake.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/pdfmake/vfs_fonts.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- Toastr -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/toastr/toastr.min.js"></script>
+    <!-- jquery-validation -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/jquery-validation/jquery.validate.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/jquery-validation/additional-methods.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Scripts/jquery.validate.unobtrusive.js"></script>
+    <!-- Select2 -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/select2/js/select2.full.min.js"></script>
+    <!-- Bootstrap4 Duallistbox -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+    <!-- InputMask -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/moment/moment.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/inputmask/jquery.inputmask.min.js"></script>
+    <!-- date-range-picker -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap color picker -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- BS-Stepper -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/bs-stepper/js/bs-stepper.min.js"></script>
+    <!-- dropzonejs -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/dropzone/min/dropzone.min.js"></script>
+    <!-- AdminLTE App -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/dist/js/adminlte.min.js"></script>
+
+    <!-- Ion Slider -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+    <!-- Bootstrap slider -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <!-- bs-custom-file-input -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/bs-custom-file-input/bs-custom-file-input.js"></script>
+    
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+    <!-- Summernote -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- CodeMirror -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/codemirror/codemirror.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/codemirror/mode/css/css.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/codemirror/mode/xml/xml.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/bootstrap-multiselect-checkbox/js/bootstrap-multiselect.js"></script>
+
+
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Scripts/jquery.validate.unobtrusive.js"></script>
+    <!--script autocomplete-->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/typeahead/typeahead.bundle.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Scripts/jsInit.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Scripts/jsControl.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Scripts/jsNumber.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Scripts/jsHamChung.js?time=20250313164617"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+
+    
+    
+    <!-- AdminLTE for demo purposes -->
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/dist/js/demo.js"></script>
+
+    
+
+    
+    
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/lightgallery-master/dist/js/lightgallery.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/lightgallery-master/demo/js/lg-pager.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/lightgallery-master/demo/js/lg-autoplay.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/lightgallery-master/demo/js/lg-fullscreen.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/lightgallery-master/demo/js/lg-zoom.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/lightgallery-master/demo/js/lg-hash.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/lightgallery-master/demo/js/lg-share.min.js"></script>
+    <script data-savepage-type="" type="text/plain" data-savepage-src="/Content/plugins/lightgallery-master/demo/js/lg-rotate.min.js"></script>
+    <script data-savepage-type="" type="text/plain"></script>
+    <script data-savepage-type="" type="text/plain"></script>
+
+    <script data-savepage-type="" type="text/plain"></script>
+
+
+
+<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" tabindex="-1" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image"  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""><div class="lb-nav"><a class="lb-prev" aria-label="Previous image" href=""></a><a class="lb-next" aria-label="Next image" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div><template id="auto-clicker-autofill-popup"></template>
+<template id="auto-clicker-autofill-popup-tr"></template>
+</body></html>
